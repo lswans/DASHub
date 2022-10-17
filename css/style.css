@@ -1,34 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
 h1, h2, h3{
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 3400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
 
+
+
 body{
     color: white;
-    background-color: rgb(32, 153, 180);
+    background-color: rebeccapurple;
 }
 
 h1{
     font-size: 2em;
-}
-
-section.intro{
-    padding-left: 5rem;
-}
-
-section.about_us{
-    padding-left: 10rem;
-
+    color: goldenrod;
 }
 
 table{
     border-collapse: collapse;
-    border: 3px solid forestgreen;
+    border: 3px double black;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 th{
@@ -40,20 +36,73 @@ th{
 }
 
 img{
-    max-width: 90px;
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .navbar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+    display: inline;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(128, 0, 128, 0.6);
+    margin: none;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1.5px solid black;
+    margin-left: 0;
+    margin-right: 0;
+    width: 98.5%;
+
 }
 
-.navbar .card{
+.navbar .navbar_class{
+    display: flex;
+    justify-content: center;
+}
+.navbar .navbar_class .card{
+    display: inline-block;
     text-align: center;
+    background-color: goldenrod;
+    border-radius: 16px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0 3px rgba(0, 0, 0, .16), 0 3px rgba(0, 0, 0, .23);
+    margin: .5rem;
+
+}
+
+.navbar .navbar_class .card:hover{
+    color: rebeccapurple;
+    background-color: forestgreen;
+}
+
+
+
+.navbar .card a{
+    text-decoration: none;
+    color: black;
 }
 
 .intro{
     text-align: center;
+}
+.card-container{
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-container .intro{
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-container .contributors{
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
