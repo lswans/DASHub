@@ -4,19 +4,30 @@
 
 h1, h2, h3{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(47, 79, 79);
+    
 }
 
+.card-container h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
 
+header{
+    align-items: left;
+}
 
 body{
-    color: white;
-    background-color: rebeccapurple;
+    width: 100%;
+    color: darkslategrey;
+    background-color: #eee;
 }
 
 h1{
-    font-size: 2em;
+    text-align: left;
+    font-size: 2.5em;
     color: goldenrod;
 }
 
@@ -41,25 +52,24 @@ img{
     border-radius: 50%;
 }
 
+
 .navbar{
-    display: inline;
+    background-color: darkslategray;
+    display: flex;
     position: fixed;
-    justify-content: center;
-    background-color: rgba(128, 0, 128, 0.6);
-    margin: none;
-    padding: 10px;
-    border-radius: 30px;
-    border: 1.5px solid black;
-    margin-left: 0;
-    margin-right: 0;
-    width: 98.5%;
+    width: 100%;
 
 }
 
 .navbar .navbar_class{
-    display: flex;
-    justify-content: center;
+    border: 1.5px solid silver;
+    border-radius: 12px;
+    display: inline;
+    padding-top: 15px;
+    margin: 0.5em;
+
 }
+
 .navbar .navbar_class .card{
     display: inline-block;
     text-align: center;
@@ -74,7 +84,7 @@ img{
 
 .navbar .navbar_class .card:hover{
     color: rebeccapurple;
-    background-color: forestgreen;
+    background-color: darkgoldenrod;
 }
 
 
@@ -84,25 +94,51 @@ img{
     color: black;
 }
 
-.intro{
-    text-align: center;
-}
 .card-container{
-    padding-top: 200px;
+    width: 100%;
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
 }
 .card-container .intro{
-    flex: 0 1 50%;
+    flex: 1 0 50%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    padding-left: 1rem;
+    border: 1pt solid black;
+    border-radius: 15%;
+    
 }
 
-.card-container .contributors{
-    flex: 0 0 50%;
+.card-container #contributors{
+    flex:  0 50%;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+#tool-window{
+    border: 7px solid darkslateblue;
+    border-radius: 10%;
+    flex: 0 0 75%;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 330px;
+    margin-top: 30px;
+
+}
+
+#tool-window .map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+
+}
+
+.icon{
+    width: 100px;
+    height: auto;
 }
